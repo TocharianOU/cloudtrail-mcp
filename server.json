@@ -8,13 +8,13 @@
     "url": "https://github.com/TocharianOU/cloudtrail-mcp",
     "source": "github"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packages": [
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "@tocharianou/cloudtrail-mcp",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "transport": {
         "type": "stdio"
       },
@@ -59,7 +59,7 @@
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "@tocharianou/cloudtrail-mcp",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "transport": {
         "type": "streamable-http",
         "url": "http://localhost:{MCP_HTTP_PORT}/mcp"
@@ -117,7 +117,7 @@
   "_meta": {
     "io.modelcontextprotocol.registry/publisher-provided": {
       "tool": "manual",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "features": {
         "transport_modes": [
           "stdio",

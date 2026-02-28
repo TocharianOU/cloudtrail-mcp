@@ -1,7 +1,7 @@
 {
   "name": "@tocharianou/cloudtrail-mcp",
   "description": "AWS CloudTrail MCP Server – audit log lookup, CloudTrail Lake SQL analytics, and event data store management for security investigations",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "mcpName": "io.github.TocharianOU/cloudtrail-mcp",
   "license": "Apache-2.0",
   "author": "TocharianOU",
