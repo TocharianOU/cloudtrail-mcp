@@ -4,43 +4,133 @@
   "description": "AWS CloudTrail MCP Server for audit log lookup, CloudTrail Lake SQL analytics, event data store management, and security investigations",
   "title": "CloudTrail",
   "websiteUrl": "https://github.com/TocharianOU/cloudtrail-mcp",
-  "repository": { "url": "https://github.com/TocharianOU/cloudtrail-mcp", "source": "github" },
-  "version": "1.0.1",
+  "repository": {
+    "url": "https://github.com/TocharianOU/cloudtrail-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
   "packages": [
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "@tocharianou/cloudtrail-mcp",
-      "version": "1.0.1",
-      "transport": { "type": "stdio" },
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
       "environmentVariables": [
-        { "name": "AWS_ACCESS_KEY_ID", "description": "AWS Access Key ID. Required for CloudTrail API access.", "isRequired": true, "isSecret": true, "format": "string" },
-        { "name": "AWS_SECRET_ACCESS_KEY", "description": "AWS Secret Access Key.", "isRequired": true, "isSecret": true, "format": "string" },
-        { "name": "AWS_DEFAULT_REGION", "description": "Default AWS region (e.g. us-east-1).", "isRequired": true, "format": "string", "default": "us-east-1" },
-        { "name": "AWS_SESSION_TOKEN", "description": "AWS Session Token for temporary credentials (AssumeRole / AWS SSO). Optional.", "isRequired": false, "isSecret": true, "format": "string" },
-        { "name": "AWS_TIMEOUT", "description": "Request timeout in milliseconds (default: 30000).", "isRequired": false, "format": "number" }
+        {
+          "name": "AWS_ACCESS_KEY_ID",
+          "description": "AWS Access Key ID. Required for CloudTrail API access.",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "AWS_SECRET_ACCESS_KEY",
+          "description": "AWS Secret Access Key.",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "AWS_DEFAULT_REGION",
+          "description": "Default AWS region (e.g. us-east-1).",
+          "isRequired": true,
+          "format": "string",
+          "default": "us-east-1"
+        },
+        {
+          "name": "AWS_SESSION_TOKEN",
+          "description": "AWS Session Token for temporary credentials (AssumeRole / AWS SSO). Optional.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "AWS_TIMEOUT",
+          "description": "Request timeout in milliseconds (default: 30000).",
+          "isRequired": false,
+          "format": "number"
+        }
       ]
     },
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "@tocharianou/cloudtrail-mcp",
-      "version": "1.0.1",
-      "transport": { "type": "streamable-http", "url": "http://localhost:{MCP_HTTP_PORT}/mcp" },
+      "version": "1.0.0",
+      "transport": {
+        "type": "streamable-http",
+        "url": "http://localhost:{MCP_HTTP_PORT}/mcp"
+      },
       "environmentVariables": [
-        { "name": "MCP_TRANSPORT", "description": "Transport mode", "isRequired": true, "format": "string", "default": "http", "choices": ["stdio", "http"] },
-        { "name": "MCP_HTTP_PORT", "description": "HTTP server port", "isRequired": false, "format": "number", "default": "3000" },
-        { "name": "AWS_ACCESS_KEY_ID", "description": "AWS Access Key ID.", "isRequired": true, "isSecret": true, "format": "string" },
-        { "name": "AWS_SECRET_ACCESS_KEY", "description": "AWS Secret Access Key.", "isRequired": true, "isSecret": true, "format": "string" },
-        { "name": "AWS_DEFAULT_REGION", "description": "Default AWS region (e.g. us-east-1).", "isRequired": true, "format": "string", "default": "us-east-1" },
-        { "name": "AWS_SESSION_TOKEN", "description": "AWS Session Token for temporary credentials. Optional.", "isRequired": false, "isSecret": true, "format": "string" }
+        {
+          "name": "MCP_TRANSPORT",
+          "description": "Transport mode",
+          "isRequired": true,
+          "format": "string",
+          "default": "http",
+          "choices": [
+            "stdio",
+            "http"
+          ]
+        },
+        {
+          "name": "MCP_HTTP_PORT",
+          "description": "HTTP server port",
+          "isRequired": false,
+          "format": "number",
+          "default": "3000"
+        },
+        {
+          "name": "AWS_ACCESS_KEY_ID",
+          "description": "AWS Access Key ID.",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "AWS_SECRET_ACCESS_KEY",
+          "description": "AWS Secret Access Key.",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "AWS_DEFAULT_REGION",
+          "description": "Default AWS region (e.g. us-east-1).",
+          "isRequired": true,
+          "format": "string",
+          "default": "us-east-1"
+        },
+        {
+          "name": "AWS_SESSION_TOKEN",
+          "description": "AWS Session Token for temporary credentials. Optional.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        }
       ]
     }
   ],
   "_meta": {
     "io.modelcontextprotocol.registry/publisher-provided": {
-      "tool": "manual", "version": "1.0.1",
-      "features": { "transport_modes": ["stdio", "http"], "analysis_types": ["lookup_events", "lake_query", "query_status", "query_results", "event_data_stores"] }
+      "tool": "manual",
+      "version": "1.0.0",
+      "features": {
+        "transport_modes": [
+          "stdio",
+          "http"
+        ],
+        "analysis_types": [
+          "lookup_events",
+          "lake_query",
+          "query_status",
+          "query_results",
+          "event_data_stores"
+        ]
+      }
     }
   }
 }
