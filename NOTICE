@@ -1,0 +1,11 @@
+CloudTrail MCP Server
+Copyright 2024 TocharianOU Contributors
+
+This product includes software developed by TocharianOU Contributors.
+https://github.com/TocharianOU/cloudtrail-mcp
+
+This project is inspired by and references the architecture of the awslabs/mcp
+CloudTrail MCP server (https://github.com/awslabs/mcp), which is also licensed
+under the Apache License 2.0.
+
+Licensed under the Apache License, Version 2.0.
